@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080808">
+  <meta name="description" content="UNKNOWN LINE — a mysterious phone interface with hidden audio transmissions.">
+  <title>UNKNOWN LINE</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="./script.js" defer></script>
+</head>
+<body>
+  <main class="phone" aria-labelledby="page-title">
+    <p class="eyebrow">SECURE CONNECTION // UNKNOWN ORIGIN</p>
+    <h1 id="page-title">UNKNOWN LINE</h1>
+
+    <section class="display" aria-label="Dial display">
+      <p class="display-label">OUTGOING SIGNAL</p>
+      <output id="number-screen" aria-live="polite">_</output>
+    </section>
+
+    <div class="keypad" aria-label="Telephone keypad">
+      <button type="button" data-key="1">1</button>
+      <button type="button" data-key="2">2</button>
+      <button type="button" data-key="3">3</button>
+      <button type="button" data-key="4">4</button>
+      <button type="button" data-key="5">5</button>
+      <button type="button" data-key="6">6</button>
+      <button type="button" data-key="7">7</button>
+      <button type="button" data-key="8">8</button>
+      <button type="button" data-key="9">9</button>
+      <button type="button" data-key="*">*</button>
+      <button type="button" data-key="0">0</button>
+      <button type="button" data-key="#">#</button>
+    </div>
+
+    <div class="actions">
+      <button type="button" id="delete-button" class="secondary">DELETE</button>
+      <button type="button" id="call-button" class="call">CALL</button>
+      <button type="button" id="clear-button" class="secondary">CLEAR</button>
+    </div>
+
+    <p id="status-message" class="status" role="status" aria-live="polite">ENTER A NUMBER...</p>
+    <p class="footer">THE LINE IS NEVER EMPTY</p>
+  </main>
+
+  <noscript>This site needs JavaScript enabled to use the dial pad.</noscript>
+</body>
+</html>
